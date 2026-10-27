@@ -1,0 +1,13 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+*.tsbuildinfo
+.DS_Store
+tmp/
+coverage/
+playwright-report/
+test-results/
+# This handoff bundle contains private source material. Never commit/deploy it.
+Jeremy_Kull_Portfolio_VSCode_Agent_Kit/

@@ -1,0 +1,5 @@
+Jeremy_Kull_Portfolio_VSCode_Agent_Kit/
+tmp/
+node_modules/
+.next/
+.env*
