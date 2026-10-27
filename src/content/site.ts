@@ -172,8 +172,8 @@ export const projects: Project[] = [
         text: "Ownership from data acquisition and cleaning through modelling and local deployment.",
       },
       {
-        label: "What I built",
-        text: "Compact machine-learning models, internal analytics and practical tooling.",
+        label: "Beyond the implementation",
+        text: "Teaching company executives how to use AI, understand its limitations and manage token usage.",
       },
     ],
     slug: "practical-ai-small-business",
@@ -185,17 +185,18 @@ export const projects: Project[] = [
     status: "Ongoing entrepreneurial work",
     visual: "pipeline",
     summary:
-      "Building the path from messy operational data to compact models and practical, locally deployed tools for Mexican SMEs.",
+      "Building practical AI tools for Mexican SMEs and teaching executives about AI use, limitations and token usage.",
     tools: ["Python", "Data pipelines", "Tabular ML"],
     role: "Founder · Applied AI & Data Science · Jul 2026–present",
     question:
       "What is the smallest useful system that can turn operational data into something a business can use?",
     introduction:
-      "I founded KAMex — Key Analytics & Metrics Mexico — to work directly on practical data problems for Mexican small and medium-sized businesses. My work spans acquisition, cleaning, modelling and delivery, with an emphasis on compact systems that fit the data and the context.",
+      "I founded KAMex — Key Analytics & Metrics Mexico — to work directly on practical data problems for Mexican small and medium-sized businesses. My work spans acquisition, cleaning, modelling and delivery, with an emphasis on compact systems that fit the data and the context. Alongside implementation, I teach company executives about practical AI use, its limitations and token usage, connecting technical understanding to business decisions.",
     contributions: [
       "Built end-to-end acquisition and preparation pipelines for internal operational data.",
       "Developed decision-tree and other small-scale machine-learning models tailored to the available data and needs.",
       "Developed internal analytics and tooling, and deployed models locally.",
+      "Teach company executives how to use AI in a business setting, understand its limitations and make sense of token usage and associated costs.",
     ],
     methods: [
       {
@@ -213,9 +214,14 @@ export const projects: Project[] = [
         description:
           "Connect data preparation, model development and local deployment. Treat the surrounding tooling as part of the work, rather than ending at an isolated model.",
       },
+      {
+        title: "Build understanding at the executive level",
+        description:
+          "Teach executives about AI use, limitations and token consumption in the context of their companies. The emphasis is on understanding what the tools can support, where human judgement remains necessary and how usage relates to cost.",
+      },
     ],
     outcome:
-      "Data pipelines, tailored small-scale models and locally deployed tools, built through hands-on ownership of the path from acquisition to delivery. The work continues as KAMex develops.",
+      "Data pipelines, tailored small-scale models and locally deployed tools, alongside executive education on AI use, limitations and token usage. The work combines hands-on implementation with helping business leaders understand the technology they use. KAMex continues to develop.",
     boundary:
       "Client names, internal datasets and commercial details remain private. The pipeline shown here is a conceptual illustration of the workflow.",
     visualCaption:
@@ -350,7 +356,7 @@ export const experience = [
     organization: "KAMex",
     role: "Founder · Applied AI & Data Science",
     detail:
-      "Data acquisition, compact machine-learning models and practical local deployments for Mexican SMEs.",
+      "Data acquisition, compact machine-learning models and local deployments for Mexican SMEs, alongside teaching executives about AI use, limitations and token usage.",
   },
   {
     dates: "JUN — SEP 2026",
