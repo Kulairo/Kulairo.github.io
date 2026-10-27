@@ -1,5 +1,11 @@
 # Validation — 27 October 2026
 
+## Papers collection
+
+Added the user-provided *Thin layer physics* laboratory report, an expandable content collection and a Papers navigation link. The public PDF is byte-identical to the supplied original (SHA-256 verified); title, authors, date and summary were checked against the document. Only the approved paper was copied from the ignored source kit.
+
+Lint, production build and type checking pass. Browser checks pass on all five content routes at 320, 375, 768, 1024 and 1440px with no overflow or automated accessibility violations. Desktop/mobile paper-section screenshots were reviewed. The Papers anchor, PDF response type, PDF bytes and browser download were verified. The original document is loaded only on demand; the cover preview is approximately 42 KB.
+
 ## Current revision: logos, lakeside photograph and personal background
 
 Added locally hosted official EPFL, Financiera Independencia and Imperial logos with explicit education/employment labels. The introduction retains the selected headshot. The About section now displays the user-requested HEIC photograph as a 1200 × 1600 WebP, in full colour with its complete composition preserved, and states that Jeremy is a Swiss national who spent his childhood in Mexico. The original HEIC remains in the private source kit.

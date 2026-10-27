@@ -1,5 +1,10 @@
 # Public image sources
 
+## Papers and previews
+
+- `public/papers/thin-layer-physics-2025.pdf`: unchanged user-authorized copy of `Rapport_TP_III_no1 (1).pdf`, a 22-page co-authored EPFL laboratory report dated 17 October 2025. Public title and authors were checked against the first page; the description was checked against the introduction, methods and conclusion.
+- `public/images/thin-layer-physics-cover.webp`: first page rendered with Poppler and resized to 600 × 848 pixels for a lightweight preview. The PDF itself is not rewritten.
+
 ## User-supplied photographs
 
 - `public/images/jeremy-profile.webp`: selected introduction headshot; cropped from the user’s new profile photograph.

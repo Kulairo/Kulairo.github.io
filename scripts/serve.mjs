@@ -19,6 +19,7 @@ const mime = {
   ".svg": "image/svg+xml",
   ".woff2": "font/woff2",
   ".ico": "image/x-icon",
+  ".pdf": "application/pdf",
 };
 await stat(resolve(root, "index.html")).catch(() => {
   throw new Error("Run npm run build before starting the static preview.");

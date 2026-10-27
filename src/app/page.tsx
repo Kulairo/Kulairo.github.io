@@ -13,6 +13,7 @@ import {
 import { FlowField } from "@/components/flow-field";
 import { Arrow, Star } from "@/components/icons";
 import { ProjectVisual } from "@/components/project-visual";
+import { papers } from "@/content/papers";
 
 export default function Home() {
   return (
@@ -208,6 +209,47 @@ export default function Home() {
             illustrative visuals. Commercial code and data remain private. *{" "}
             {projects[0].disclosure}
           </p>
+          <section id="papers" className="papers" aria-labelledby="papers-title">
+            <div className="papers-heading">
+              <div>
+                <span className="eyebrow">FROM THE LAB TO THE PAGE</span>
+                <h2 id="papers-title">Papers & <span className="serif">reports.</span></h2>
+              </div>
+              <p>Experimental work, analysis and the reasoning behind the results.</p>
+            </div>
+            <div className="papers-list">
+              {papers.map((paper) => (
+                <article className="paper-card" key={paper.slug} aria-labelledby={`paper-${paper.slug}`}>
+                  <a className="paper-preview" href={paper.pdf} target="_blank" rel="noopener noreferrer" aria-label={`Read ${paper.title} (PDF, opens in a new tab)`}>
+                    <Image
+                      src={paper.cover.src}
+                      alt={`First page of ${paper.title}`}
+                      width={paper.cover.width}
+                      height={paper.cover.height}
+                      sizes="(max-width: 600px) 65vw, 240px"
+                    />
+                  </a>
+                  <div className="paper-copy">
+                    <p className="eyebrow paper-meta">{paper.institution} · {paper.type} · <time dateTime={paper.date}>{paper.dateLabel}</time></p>
+                    <h3 id={`paper-${paper.slug}`}>{paper.title}</h3>
+                    <p className="paper-authors">{paper.authors.join(" · ")}</p>
+                    <p className="paper-summary">{paper.summary}</p>
+                    <p className="paper-scope">{paper.scope}</p>
+                    <ul className="paper-methods" aria-label="Experimental methods">
+                      {paper.methods.map((method) => <li key={method}>{method}</li>)}
+                    </ul>
+                    <div className="paper-actions">
+                      <a className="button-primary" href={paper.pdf} target="_blank" rel="noopener noreferrer">
+                        Read paper <Arrow diagonal /><span className="sr-only"> (PDF, opens in a new tab)</span>
+                      </a>
+                      <a className="paper-download" href={paper.pdf} download>Download PDF <span aria-hidden="true">↓</span></a>
+                    </div>
+                    <p className="paper-file">{paper.pages} pages · {paper.language} · PDF · {paper.fileSize}</p>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </section>
         </div>
       </section>
 

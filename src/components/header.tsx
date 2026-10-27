@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { site } from "@/content/site";
-const navigation = ["Work", "Experience", "About", "Contact"];
+const navigation = ["Work", "Papers", "Experience", "About", "Contact"];
 export function Header() {
   const [open, setOpen] = useState(false);
   return (

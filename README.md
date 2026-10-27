@@ -40,6 +40,7 @@ To publish future changes, commit and push to `main`. Verify the completed Actio
 
 - `src/content/site.ts`: biography, career direction, profile/team photographs, public contact, experience, education and project narratives. Adding a project generates its case-study route.
 - `src/content/jepa.ts`: broad JEPA explanation, separate from proprietary implementation details. Public FINDEP coverage includes historical dataset cleaning/preparation on Google Cloud, model development and Google TPU training, and representation exploration. Financial data cannot be disclosed under NDA.
+- `src/content/papers.ts`: expandable papers/report collection with original titles, dates, all authors, summaries, methods and PDF links. The first entry is the co-authored EPFL laboratory report *Thin layer physics* (17 October 2025). It is presented as a laboratory report, without implying journal publication or individual ownership of the group’s results.
 - `src/app/page.tsx`: homepage, with direct paths to evidence of ML engineering, end-to-end systems work and scientific computing.
 - `src/app/work/[slug]/page.tsx`: case-study layout, contribution summaries, technical sections and contact links.
 - `src/app/globals.css`: design tokens, editorial layout and responsive styles.
@@ -60,6 +61,15 @@ To publish future changes, commit and push to `main`. Verify the completed Actio
 The private source kit, CV, original/reference photographs, local `.env` files, temporary files and build/dependency directories are excluded from Git. Never publish the whole working directory using a generic file server. Only `out/` is the website deployment artifact.
 
 There is no analytics, tracking, third-party font request, form backend or database. Contact links open the visitor’s mail application; the copy button reports clipboard success/failure. No phone number, exact address or unreviewed résumé is published.
+
+## Adding another paper
+
+1. Review the explicitly supplied paper for its title, date, authors, subject and publication type.
+2. Copy only the approved document into `public/papers/` using a descriptive filename. Keep the source kit ignored.
+3. Render its first page into a lightweight WebP in `public/images/` and add an entry to `src/content/papers.ts`, including correct dimensions, page count and file size.
+4. Build and verify the homepage, PDF link and download before committing and pushing. The Papers section renders every entry automatically.
+
+The current `public/papers/thin-layer-physics-2025.pdf` is an unchanged copy of the user-provided report, including its references and co-author credits. PDFs load only when a visitor chooses to read or download them.
 
 ## Verification
 
