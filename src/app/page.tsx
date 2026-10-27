@@ -8,6 +8,7 @@ import {
   earlierExperience,
   capabilities,
   workPaths,
+  affiliations,
 } from "@/content/site";
 import { FlowField } from "@/components/flow-field";
 import { Arrow, Star } from "@/components/icons";
@@ -84,6 +85,27 @@ export default function Home() {
           <Link href="#work" className="eyebrow">
             SCROLL TO EXPLORE <span aria-hidden="true">↓</span>
           </Link>
+        </div>
+      </section>
+
+      <section className="affiliations wrap" aria-labelledby="affiliations-title">
+        <h2 id="affiliations-title" className="eyebrow">
+          EXPERIENCE & EDUCATION
+        </h2>
+        <div className="affiliation-grid">
+          {affiliations.map((item) => (
+            <a href={item.href} className={`affiliation affiliation-${item.key}`} key={item.key}>
+              <div className="affiliation-logo">
+                <Image
+                  src={item.logo}
+                  alt={item.name}
+                  width={item.width}
+                  height={item.height}
+                />
+              </div>
+              <span>{item.detail}</span>
+            </a>
+          ))}
         </div>
       </section>
 
@@ -278,16 +300,16 @@ export default function Home() {
             </span>
           </div>
           <div className="about-grid">
-            <div className="about-image">
+            <figure className="about-image about-personal-photo">
               <Image
-                src={site.portrait.src}
-                alt={site.portrait.alt}
-                width={site.portrait.width}
-                height={site.portrait.height}
+                src={site.personalPhoto.src}
+                alt={site.personalPhoto.alt}
+                width={site.personalPhoto.width}
+                height={site.personalPhoto.height}
                 sizes="(max-width: 700px) 80vw, 400px"
               />
-              <span className="eyebrow">ALWAYS A STUDENT OF SOMETHING.</span>
-            </div>
+              <figcaption className="eyebrow">{site.personalPhoto.caption}</figcaption>
+            </figure>
             <div className="about-copy">
               <h2>
                 A scientific mind.
@@ -298,12 +320,7 @@ export default function Home() {
                 Physics, building things, playing music. Different ways of
                 paying close attention.
               </p>
-              <p>
-                My path runs through Mexico, Switzerland and now London. Physics
-                at EPFL gave me a way to ask precise questions. Building
-                software gave me a way to put those questions to work. At
-                Imperial, I’m bringing that foundation into engineering.
-              </p>
+              <p>{site.background}</p>
               <p>
                 Music has been a constant alongside science: around 17 years of
                 advanced piano and more than 50 concerts in Mexico and China,

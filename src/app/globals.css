@@ -2685,3 +2685,108 @@ h2 {
 .about-image img {
   object-position: center top;
 }
+
+/* Real institutions, with the relationship stated beside their official marks. */
+.affiliations {
+  padding-block: 28px 42px;
+  border-top: 1px solid var(--rule);
+}
+.affiliations > h2 {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: 0.07em;
+}
+.affiliation-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: 22px;
+}
+.affiliation {
+  min-width: 0;
+  padding-inline: 30px;
+}
+.affiliation:first-child {
+  padding-left: 0;
+}
+.affiliation + .affiliation {
+  border-left: 1px solid var(--rule);
+}
+.affiliation-logo {
+  height: 66px;
+  display: flex;
+  align-items: center;
+}
+.affiliation-logo img {
+  width: auto;
+  height: auto;
+  max-height: 58px;
+  max-width: 100%;
+  object-fit: contain;
+}
+.affiliation-epfl img {
+  width: 126px;
+}
+.affiliation-findep img {
+  width: 203px;
+}
+.affiliation-imperial img {
+  width: 230px;
+}
+.affiliation > span {
+  display: block;
+  margin-top: 14px;
+  font-size: 11px;
+  color: var(--muted);
+}
+.affiliation:hover > span {
+  color: var(--copper);
+}
+.about-personal-photo img {
+  filter: none;
+  aspect-ratio: 3 / 4;
+  height: auto;
+  object-fit: contain;
+}
+.about-personal-photo figcaption {
+  margin-top: 15px;
+  color: var(--muted);
+  font-size: 9px;
+}
+@media (max-width: 600px) {
+  .affiliations {
+    padding-block: 24px 30px;
+  }
+  .affiliation-grid {
+    grid-template-columns: 1fr;
+    margin-top: 16px;
+  }
+  .affiliation,
+  .affiliation:first-child {
+    padding: 18px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+    align-items: center;
+  }
+  .affiliation + .affiliation {
+    border-left: 0;
+    border-top: 1px solid var(--rule);
+  }
+  .affiliation-logo {
+    height: 46px;
+  }
+  .affiliation-epfl img {
+    width: 92px;
+  }
+  .affiliation > span {
+    font-size: 10px;
+    margin: 0;
+  }
+  .about-personal-photo {
+    width: 100%;
+    max-width: 400px;
+  }
+  .about-personal-photo figcaption {
+    font-size: 8px;
+  }
+}

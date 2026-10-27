@@ -49,9 +49,13 @@ To publish future changes, commit and push to `main`. Verify the completed Actio
 
 ## Profile and photo handling
 
-`public/images/jeremy-profile.webp` is the **only profile image**. It is a crop of the newly selected photograph, removing the phone interface and surrounding black space without generating or changing facial features. Both profile placements use this file. The earlier profile portrait has been removed from public assets and is not included in the repository or deployment. Replace `site.portrait` when changing the profile image; update its alt text and dimensions together.
+`public/images/jeremy-profile.webp` is the **introduction profile image**. It is a crop of the newly selected photograph, removing the phone interface and surrounding black space without generating or changing facial features. The earlier profile portrait has been removed from public assets and is not included in the repository or deployment. Replace `site.portrait` when changing the profile image; update its alt text and dimensions together.
+
+`public/images/jeremy-lakeside.webp` is the personal photograph in “Beyond the code.” It was converted from the user-provided `IMG_2201.HEIC`, with orientation corrected and the complete composition preserved in colour. The browser-ready copy is 1200 × 1600 pixels, without source metadata. The original HEIC remains in the private asset kit.
 
 `public/images/epfl-spacecraft-team-2025-2026.webp` is the user-authorised team photograph. It is shown with its full group and aspect ratio preserved. Its configuration is in `site.teamPhoto`.
+
+`public/logos/` contains official EPFL, Financiera Independencia and Imperial artwork, shown alongside Jeremy’s education or employment relationship. Sources and asset handling are recorded in `docs/ASSETS.md`. Logos are hosted locally, with no third-party image requests.
 
 The private source kit, CV, original/reference photographs, local `.env` files, temporary files and build/dependency directories are excluded from Git. Never publish the whole working directory using a generic file server. Only `out/` is the website deployment artifact.
 

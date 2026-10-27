@@ -5,6 +5,8 @@ export const site = {
   name: "Jeremy Kull Jaeggli",
   email: "jeremykulljaeggli@gmail.com",
   location: "London, UK",
+  background:
+    "I’m a Swiss national and spent my childhood in Mexico. My path has since taken me to Switzerland and now London. Physics at EPFL gave me a way to ask precise questions. Building software gave me a way to put those questions to work. At Imperial, I’m bringing that foundation into engineering.",
   title: "Jeremy Kull Jaeggli — Physics, AI & Engineering",
   description:
     "Physics graduate from EPFL, studying advanced aeronautical engineering at Imperial College London. Practical machine learning, representation learning and scientific computing.",
@@ -14,6 +16,13 @@ export const site = {
     alt: "Portrait of Jeremy Kull Jaeggli in a navy jacket and tie",
     width: 362,
     height: 475,
+  },
+  personalPhoto: {
+    src: "/images/jeremy-lakeside.webp",
+    alt: "Jeremy beside a lake with snow-capped mountains in the background",
+    width: 1200,
+    height: 1600,
+    caption: "BEYOND THE CODE / A WIDER WORLD.",
   },
   role: "I build machine-learning systems and scientific software.",
   introduction:
@@ -37,6 +46,36 @@ export const site = {
     "Optimisation & control",
   ],
 };
+
+export const affiliations = [
+  {
+    name: "EPFL",
+    detail: "BSc Physics · 2023–2026",
+    href: "https://www.epfl.ch/",
+    logo: "/logos/epfl.svg",
+    width: 182.4,
+    height: 53,
+    key: "epfl",
+  },
+  {
+    name: "Financiera Independencia",
+    detail: "Data Science & AI · 2026",
+    href: "https://home.independencia.com.mx/",
+    logo: "/logos/financiera-independencia.png",
+    width: 350,
+    height: 100,
+    key: "findep",
+  },
+  {
+    name: "Imperial College London",
+    detail: "MSc Aeronautics · 2026–2027",
+    href: "https://www.imperial.ac.uk/",
+    logo: "/logos/imperial.svg",
+    width: 727,
+    height: 80,
+    key: "imperial",
+  },
+];
 
 export type Project = {
   number: string;

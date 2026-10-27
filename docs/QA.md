@@ -1,5 +1,11 @@
 # Validation — 27 October 2026
 
+## Current revision: logos, lakeside photograph and personal background
+
+Added locally hosted official EPFL, Financiera Independencia and Imperial logos with explicit education/employment labels. The introduction retains the selected headshot. The About section now displays the user-requested HEIC photograph as a 1200 × 1600 WebP, in full colour with its complete composition preserved, and states that Jeremy is a Swiss national who spent his childhood in Mexico. The original HEIC remains in the private source kit.
+
+Lint, static production build and type checking pass. The existing browser suite passes across all five content routes and viewport widths from 320 to 1440px, with no horizontal overflow, browser errors or automated accessibility violations. All public images decode successfully. Desktop and mobile screenshots of the logos and updated About section were visually reviewed. Asset sources are documented in `ASSETS.md`.
+
 ## GitHub Pages export and new profile photo
 
 The current user-selected profile photo replaces all earlier profile images in both profile placements. Only the new profile WebP and the authorised spacecraft-team WebP are included in public assets. The source kit, private CV, original photos and retired portraits are excluded from Git and the static export.
