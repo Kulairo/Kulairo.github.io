@@ -1,8 +1,14 @@
 # Validation — 28 October 2026
 
+## PDF title update
+
+Updated all six French report headings and PDF title metadata to match the academic website titles, and regenerated their cover previews. The original exercise headings (and the old subtitles in reports 1 and 3) were removed, rather than merely covered. Embedded Latin Modern Roman keeps the original LaTeX style. Original PDFs remain in the ignored asset kit.
+
+All 86 pages were compared against their originals at 144 dpi: zero changed pixels outside the first-page title regions, identical body text outside those regions, unchanged page dimensions and preserved link counts. All six PDF metadata titles and extractable heading texts match the website. Poppler independently confirmed zero changed pixels outside the title areas on all six first pages; those page renders were also visually inspected. Evidence and checksums are in ignored `tmp/pdf-titles/`.
+
 ## French numerical physics collection
 
-Added six user-supplied coursework reports with French academic display titles, summaries, source dates, author credits and descriptive PDF filenames. The original PDFs, including their internal titles and layout, remain byte-identical to the supplied documents (SHA-256 verified). Each entry has a first-page preview and French read/download controls, arranged in a two-column desktop grid and a single column on smaller screens.
+Added six user-supplied coursework reports with French academic display titles, summaries, source dates, author credits and descriptive PDF filenames. At initial publication, the PDFs were byte-identical to the supplied documents (SHA-256 verified); the subsequent title-only revision is documented above. Each entry has a first-page preview and French read/download controls, arranged in a two-column desktop grid and a single column on smaller screens.
 
 Lint, production build and type checking pass. The full browser suite passes at 320, 375, 768, 1024 and 1440px, with no overflow, browser errors or automated accessibility violations. Additional collection checks verified seven total papers, six French entries, successful PDF responses, all six browser downloads and exact downloaded-byte hashes. Desktop and mobile collection screenshots were reviewed. Evidence is in ignored `tmp/papers-review/` and `tmp/qa/`.
 

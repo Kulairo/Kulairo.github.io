@@ -7,7 +7,7 @@
 
 ### Numerical physics reports
 
-Six French coursework reports added at the user’s request. Academic display titles and descriptive download filenames replace the exercise labels on the website. PDF contents, internal titles, metadata and layout are untouched; each public copy was verified byte-for-byte against its source (SHA-256). Dates and author names follow each PDF’s first page.
+Six French coursework reports added at the user’s request. Academic display titles and descriptive download filenames replace the exercise labels. At the user’s follow-up request, the six PDFs’ first-page headings and title metadata now match those display titles. The original title/subtitle text was replaced in place with embedded Latin Modern Roman, fitting the existing heading area. All 86 pages were rendered at 144 dpi and compared with their private originals: zero changed pixels outside the title regions, identical body text, preserved page sizes and link counts. Dates and author names follow each PDF’s first page. Original source PDFs remain unchanged in the private asset kit.
 
 | Public PDF | Private source | Pages |
 | --- | --- | --- |
