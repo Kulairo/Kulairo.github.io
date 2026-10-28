@@ -2848,6 +2848,113 @@ h2 {
   }
 }
 
+.papers-collection-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 24px;
+  margin: 48px 0 24px;
+}
+.papers-collection-heading .eyebrow {
+  color: var(--orange);
+  font-size: 9px;
+}
+.papers-collection-heading h3 {
+  margin-top: 14px;
+  font-size: clamp(24px, 3vw, 32px);
+}
+.papers-collection-heading p:not(.eyebrow) {
+  margin-top: 12px;
+  max-width: 540px;
+  color: #b8c6c9;
+  font-size: 13px;
+}
+.papers-count {
+  color: #b8c6c9;
+  font-family: var(--font-mono), monospace;
+  font-size: 10px;
+  white-space: nowrap;
+}
+.papers-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+}
+.paper-card-compact {
+  display: block;
+  position: relative;
+}
+.paper-card-compact .paper-preview {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  width: 70px;
+  padding: 0;
+  background: none;
+}
+.paper-card-compact .paper-preview img {
+  width: 100%;
+}
+.paper-card-compact .paper-copy {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 26px;
+}
+.paper-card-compact .paper-meta,
+.paper-card-compact h3 {
+  padding-right: 92px;
+}
+.paper-card-compact h3 {
+  font-size: clamp(23px, 2.1vw, 28px);
+  line-height: 1.2;
+  min-height: 90px;
+  text-wrap: pretty;
+}
+.paper-card-compact .paper-summary {
+  font-size: 13px;
+  margin-top: 20px;
+}
+.paper-card-compact .paper-methods {
+  margin-bottom: 24px;
+}
+.paper-card-compact .paper-actions {
+  margin-top: auto;
+  gap: 16px;
+}
+.paper-card-compact .button-primary {
+  font-size: 12px;
+  padding: 12px 15px;
+}
+@media (max-width: 1000px) {
+  .papers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 600px) {
+  .papers-collection-heading {
+    align-items: start;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .paper-card-compact .paper-copy {
+    padding: 22px 20px;
+  }
+  .paper-card-compact .paper-preview {
+    top: 22px;
+    right: 20px;
+    width: 54px;
+  }
+  .paper-card-compact .paper-meta {
+    min-height: 80px;
+    padding-right: 74px;
+  }
+  .paper-card-compact h3 {
+    padding-right: 0;
+    min-height: 0;
+  }
+}
+
 /* Real institutions, with the relationship stated beside their official marks. */
 .affiliations {
   padding-block: 28px 42px;

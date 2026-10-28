@@ -5,6 +5,21 @@
 - `public/papers/thin-layer-physics-2025.pdf`: unchanged user-authorized copy of `Rapport_TP_III_no1 (1).pdf`, a 22-page co-authored EPFL laboratory report dated 17 October 2025. Public title and authors were checked against the first page; the description was checked against the introduction, methods and conclusion.
 - `public/images/thin-layer-physics-cover.webp`: first page rendered with Poppler and resized to 600 × 848 pixels for a lightweight preview. The PDF itself is not rewritten.
 
+### Numerical physics reports
+
+Six French coursework reports added at the user’s request. Academic display titles and descriptive download filenames replace the exercise labels on the website. PDF contents, internal titles, metadata and layout are untouched; each public copy was verified byte-for-byte against its source (SHA-256). Dates and author names follow each PDF’s first page.
+
+| Public PDF | Private source | Pages |
+| --- | --- | --- |
+| `dynamique-satellite-terre-lune-2025.pdf` | `RapportExercice1_Ludovic_Brenier__Jeremy_Kull_pdf-1.pdf` | 13 |
+| `chaos-aiguille-aimantee-2025.pdf` | `Exercice_2_Ludovic_Brenier_Jeremy_Kull-.pdf` | 13 |
+| `dynamique-asteroide-soleil-jupiter-2025.pdf` | `Exercice_3_Ludovic_Brenier_Jeremy_Kull-3.pdf` | 13 |
+| `electrostatique-cylindre-dielectrique-2025.pdf` | `Exercice_4_Ludovic_Brenier_Jeremy_Kull-3.pdf` | 14 |
+| `propagation-ondes-ocean-profondeur-variable-2025.pdf` | `Exercice_5_Ludovic_brenier_Jeremy_Kull-6.pdf` | 20 |
+| `dynamique-quantique-effet-tunnel-2025.pdf` | `Exercice_6_Ludovic_Brenier_Jeremy_KULL-3.pdf` | 13 |
+
+The corresponding `public/images/*-cover.webp` files are complete first-page renders made with Poppler, resized to 600 × 848 pixels. French summaries describe the reports; the collection is identified as coursework.
+
 ## User-supplied photographs
 
 - `public/images/jeremy-profile.webp`: selected introduction headshot; cropped from the user’s new profile photograph.

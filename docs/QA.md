@@ -1,4 +1,10 @@
-# Validation — 27 October 2026
+# Validation — 28 October 2026
+
+## French numerical physics collection
+
+Added six user-supplied coursework reports with French academic display titles, summaries, source dates, author credits and descriptive PDF filenames. The original PDFs, including their internal titles and layout, remain byte-identical to the supplied documents (SHA-256 verified). Each entry has a first-page preview and French read/download controls, arranged in a two-column desktop grid and a single column on smaller screens.
+
+Lint, production build and type checking pass. The full browser suite passes at 320, 375, 768, 1024 and 1440px, with no overflow, browser errors or automated accessibility violations. Additional collection checks verified seven total papers, six French entries, successful PDF responses, all six browser downloads and exact downloaded-byte hashes. Desktop and mobile collection screenshots were reviewed. Evidence is in ignored `tmp/papers-review/` and `tmp/qa/`.
 
 ## Papers collection
 
