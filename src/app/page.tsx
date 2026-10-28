@@ -225,8 +225,8 @@ export default function Home() {
             </div>
             <div className="papers-collection-heading" lang="fr">
               <div>
-                <p className="eyebrow">EPFL · PHYSIQUE NUMÉRIQUE · 2025</p>
-                <h3>De la mécanique à la physique quantique.</h3>
+                <p className="eyebrow" lang="en">EPFL · NUMERICAL PHYSICS · 2025</p>
+                <h3 lang="en">From mechanics to quantum physics.</h3>
                 <p>Six rapports de cours : modèles, méthodes et simulations. Documents originaux en français.</p>
               </div>
               <span className="papers-count">{papers.filter((paper) => paper.collection === "numerical").length} rapports</span>

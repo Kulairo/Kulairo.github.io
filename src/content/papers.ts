@@ -57,7 +57,7 @@ export const papers: Paper[] = [
   },
   {
     "slug": "dynamique-satellite-terre-lune",
-    "title": "Dynamique d’un satellite dans le système Terre–Lune : comparaison des schémas d’Euler",
+    "title": "Satellite dynamics in the Earth–Moon system: comparison of Euler schemes",
     "type": "Rapport de physique numérique",
     "institution": "EPFL",
     "date": "2025-02",
@@ -87,7 +87,7 @@ export const papers: Paper[] = [
   },
   {
     "slug": "chaos-aiguille-aimantee",
-    "title": "Dynamique non linéaire et chaos d’une aiguille aimantée en champ oscillant",
+    "title": "Nonlinear dynamics and chaos of a magnetic needle in an oscillating field",
     "type": "Rapport de physique numérique",
     "institution": "EPFL",
     "date": "2025-11-21",
@@ -117,7 +117,7 @@ export const papers: Paper[] = [
   },
   {
     "slug": "dynamique-asteroide-soleil-jupiter",
-    "title": "Dynamique d’un astéroïde dans le système Soleil–Jupiter : intégration à pas adaptatif",
+    "title": "Asteroid dynamics in the Sun–Jupiter system: adaptive time-step integration",
     "type": "Rapport de physique numérique",
     "institution": "EPFL",
     "date": "2025-11-21",
@@ -147,7 +147,7 @@ export const papers: Paper[] = [
   },
   {
     "slug": "electrostatique-cylindre-dielectrique",
-    "title": "Modélisation électrostatique d’un cylindre diélectrique par éléments finis",
+    "title": "Finite element modelling of electrostatics in a dielectric cylinder",
     "type": "Rapport de physique numérique",
     "institution": "EPFL",
     "date": "2025-11-21",
@@ -177,7 +177,7 @@ export const papers: Paper[] = [
   },
   {
     "slug": "propagation-ondes-ocean-profondeur-variable",
-    "title": "Propagation des ondes en océan de profondeur variable : analyse et simulation numérique",
+    "title": "Wave propagation in an ocean of variable depth: analysis and numerical simulation",
     "type": "Rapport de physique numérique",
     "institution": "EPFL",
     "date": "2025-11-21",
@@ -207,7 +207,7 @@ export const papers: Paper[] = [
   },
   {
     "slug": "dynamique-quantique-effet-tunnel",
-    "title": "Dynamique quantique et effet tunnel : résolution numérique de l’équation de Schrödinger",
+    "title": "Quantum dynamics and tunnelling: numerical solution of the Schrödinger equation",
     "type": "Rapport de physique numérique",
     "institution": "EPFL",
     "date": "2025-11-21",
