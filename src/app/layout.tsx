@@ -68,7 +68,7 @@ export default function RootLayout({
     ...(origin ? { url: origin, image: `${origin}${site.portrait.src}` } : {}),
     alumniOf: {
       "@type": "CollegeOrUniversity",
-      name: "École polytechnique fédérale de Lausanne",
+      name: "EPFL",
     },
     homeLocation: { "@type": "Place", name: "London, UK" },
     knowsLanguage: ["Spanish", "French", "English", "German"],

@@ -223,13 +223,13 @@ export default function Home() {
                 <PaperCard key={paper.slug} paper={paper} />
               ))}
             </div>
-            <div className="papers-collection-heading" lang="fr">
+            <div className="papers-collection-heading" lang="en">
               <div>
                 <p className="eyebrow" lang="en">EPFL · NUMERICAL PHYSICS · 2025</p>
                 <h3 lang="en">From mechanics to quantum physics.</h3>
-                <p>Six rapports de cours : modèles, méthodes et simulations. Documents originaux en français.</p>
+                <p>Six coursework reports exploring models, methods and simulations. PDFs available in French.</p>
               </div>
-              <span className="papers-count">{papers.filter((paper) => paper.collection === "numerical").length} rapports</span>
+              <span className="papers-count">{papers.filter((paper) => paper.collection === "numerical").length} reports</span>
             </div>
             <div className="papers-grid">
               {papers.filter((paper) => paper.collection === "numerical").map((paper) => (

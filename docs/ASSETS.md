@@ -7,7 +7,7 @@
 
 ### Numerical physics reports
 
-Six French coursework reports added at the user’s request. Academic display titles and descriptive download filenames replace the exercise labels. At the user’s follow-up request, the six PDFs’ first-page headings and title metadata were updated to the French academic titles. The website display titles have since been translated to English; the PDFs and their previews remain in French. The original title/subtitle text was replaced in place with embedded Latin Modern Roman, fitting the existing heading area. All 86 pages were rendered at 144 dpi and compared with their private originals: zero changed pixels outside the title regions, identical body text, preserved page sizes and link counts. Dates and author names follow each PDF’s first page. Original source PDFs remain unchanged in the private asset kit.
+Six French coursework reports added at the user’s request. Academic display titles and descriptive download filenames replace the exercise labels. At the user’s follow-up request, the six PDFs’ first-page headings and title metadata were updated to the French academic titles. The website copy has since been translated to English; the PDFs and their previews remain in French. The original title/subtitle text was replaced in place with embedded Latin Modern Roman, fitting the existing heading area. All 86 pages were rendered at 144 dpi and compared with their private originals: zero changed pixels outside the title regions, identical body text, preserved page sizes and link counts. Dates and author names follow each PDF’s first page. Original source PDFs remain unchanged in the private asset kit.
 
 | Public PDF | Private source | Pages |
 | --- | --- | --- |
@@ -18,7 +18,7 @@ Six French coursework reports added at the user’s request. Academic display ti
 | `propagation-ondes-ocean-profondeur-variable-2025.pdf` | `Exercice_5_Ludovic_brenier_Jeremy_Kull-6.pdf` | 20 |
 | `dynamique-quantique-effet-tunnel-2025.pdf` | `Exercice_6_Ludovic_Brenier_Jeremy_KULL-3.pdf` | 13 |
 
-The corresponding `public/images/*-cover.webp` files are complete first-page renders made with Poppler, resized to 600 × 848 pixels. French summaries describe the reports; the collection is identified as coursework.
+The corresponding `public/images/*-cover.webp` files are complete first-page renders made with Poppler, resized to 600 × 848 pixels. English summaries describe the French reports; the collection is identified as coursework.
 
 ## User-supplied photographs
 

@@ -1,5 +1,11 @@
 # Validation — 28 October 2026
 
+## English website copy
+
+Translated all paper collection copy into English: titles, summaries, scope notes, methods, dates, report types, document-language labels, file sizes, buttons and accessible labels. Website language attributes remain English; PDF links separately identify their destination language. All six French PDFs and their first-page previews are unchanged.
+
+Lint and the production build pass. Exported pages and accessible labels were checked for the superseded French copy and non-English language attributes. SHA-256 checks confirm the six PDFs match the previously verified French versions. The full browser suite passes on all five content routes at 320, 375, 768, 1024 and 1440px, with no overflow, browser errors or automated accessibility violations.
+
 ## PDF title update
 
 Updated all six French report headings and PDF title metadata to match the academic website titles, and regenerated their cover previews. The original exercise headings (and the old subtitles in reports 1 and 3) were removed, rather than merely covered. Embedded Latin Modern Roman keeps the original LaTeX style. Original PDFs remain in the ignored asset kit.

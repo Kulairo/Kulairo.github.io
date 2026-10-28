@@ -14,7 +14,7 @@ export type Paper = {
   pages: number;
   fileSize: string;
   language: string;
-  locale: "en" | "fr";
+  pdfLocale: "en" | "fr";
   collection: "laboratory" | "numerical";
   cover: { src: string; width: number; height: number };
 };
@@ -47,7 +47,7 @@ export const papers: Paper[] = [
     pages: 22,
     fileSize: "9.6 MB",
     language: "English",
-    locale: "en",
+    pdfLocale: "en",
     collection: "laboratory",
     cover: {
       src: "/images/thin-layer-physics-cover.webp",
@@ -58,26 +58,26 @@ export const papers: Paper[] = [
   {
     "slug": "dynamique-satellite-terre-lune",
     "title": "Satellite dynamics in the Earth–Moon system: comparison of Euler schemes",
-    "type": "Rapport de physique numérique",
+    "type": "Numerical physics report",
     "institution": "EPFL",
     "date": "2025-02",
-    "dateLabel": "Février 2025",
+    "dateLabel": "February 2025",
     "authors": [
       "Jeremy Kull",
       "Ludovic Brenier"
     ],
-    "summary": "Étude du mouvement d’un satellite dans le référentiel tournant Terre–Lune, avec prise en compte des forces d’inertie et comparaison de trois schémas d’intégration.",
-    "scope": "Analyse de la convergence numérique, de l’évolution de l’énergie et des trajectoires du satellite.",
+    "summary": "Study of satellite motion in the rotating Earth–Moon frame, accounting for inertial forces and comparing three numerical integration schemes.",
+    "scope": "Analysis of numerical convergence, energy evolution and satellite trajectories.",
     "methods": [
-      "Méthodes d’Euler",
-      "Référentiel tournant",
-      "Convergence numérique"
+      "Euler methods",
+      "Rotating reference frame",
+      "Numerical convergence"
     ],
     "pdf": "/papers/dynamique-satellite-terre-lune-2025.pdf",
     "pages": 13,
-    "fileSize": "1,2 Mo",
-    "language": "Français",
-    "locale": "fr",
+    "fileSize": "1.2 MB",
+    "language": "French",
+    "pdfLocale": "fr",
     "collection": "numerical",
     "cover": {
       "src": "/images/dynamique-satellite-terre-lune-cover.webp",
@@ -88,26 +88,26 @@ export const papers: Paper[] = [
   {
     "slug": "chaos-aiguille-aimantee",
     "title": "Nonlinear dynamics and chaos of a magnetic needle in an oscillating field",
-    "type": "Rapport de physique numérique",
+    "type": "Numerical physics report",
     "institution": "EPFL",
     "date": "2025-11-21",
-    "dateLabel": "21 novembre 2025",
+    "dateLabel": "21 November 2025",
     "authors": [
       "Jeremy Kull Jaeggli",
       "Ludovic Joseph A. Brenier"
     ],
-    "summary": "Simulation d’une aiguille aimantée soumise à un champ magnétique variable et à un amortissement, des petites oscillations aux régimes chaotiques.",
-    "scope": "Étude de l’excitation paramétrique, de la sensibilité aux conditions initiales et des attracteurs.",
+    "summary": "Simulation of a magnetic needle in a time-varying magnetic field with damping, from small oscillations to chaotic regimes.",
+    "scope": "Investigation of parametric excitation, sensitivity to initial conditions and attractors.",
     "methods": [
-      "Schéma de Verlet",
-      "Sections de Poincaré",
-      "Exposants de Lyapunov"
+      "Verlet scheme",
+      "Poincaré sections",
+      "Lyapunov exponents"
     ],
     "pdf": "/papers/chaos-aiguille-aimantee-2025.pdf",
     "pages": 13,
-    "fileSize": "1,5 Mo",
-    "language": "Français",
-    "locale": "fr",
+    "fileSize": "1.5 MB",
+    "language": "French",
+    "pdfLocale": "fr",
     "collection": "numerical",
     "cover": {
       "src": "/images/chaos-aiguille-aimantee-cover.webp",
@@ -118,26 +118,26 @@ export const papers: Paper[] = [
   {
     "slug": "dynamique-asteroide-soleil-jupiter",
     "title": "Asteroid dynamics in the Sun–Jupiter system: adaptive time-step integration",
-    "type": "Rapport de physique numérique",
+    "type": "Numerical physics report",
     "institution": "EPFL",
     "date": "2025-11-21",
-    "dateLabel": "21 novembre 2025",
+    "dateLabel": "21 November 2025",
     "authors": [
       "Jeremy Kull",
       "Ludovic Brenier"
     ],
-    "summary": "Modélisation de la trajectoire d’un astéroïde et des perturbations gravitationnelles de Jupiter à l’aide d’une intégration de Runge–Kutta d’ordre 4.",
-    "scope": "Comparaison des pas de temps fixe et adaptatif, conservation de l’énergie et exploration du voisinage des points de Lagrange.",
+    "summary": "Modelling an asteroid’s trajectory and Jupiter’s gravitational perturbations using fourth-order Runge–Kutta integration.",
+    "scope": "Comparison of fixed and adaptive time steps, energy conservation and motion near the Lagrange points.",
     "methods": [
       "Runge–Kutta 4",
-      "Pas adaptatif",
-      "Mécanique céleste"
+      "Adaptive time stepping",
+      "Celestial mechanics"
     ],
     "pdf": "/papers/dynamique-asteroide-soleil-jupiter-2025.pdf",
     "pages": 13,
-    "fileSize": "1,4 Mo",
-    "language": "Français",
-    "locale": "fr",
+    "fileSize": "1.4 MB",
+    "language": "French",
+    "pdfLocale": "fr",
     "collection": "numerical",
     "cover": {
       "src": "/images/dynamique-asteroide-soleil-jupiter-cover.webp",
@@ -148,26 +148,26 @@ export const papers: Paper[] = [
   {
     "slug": "electrostatique-cylindre-dielectrique",
     "title": "Finite element modelling of electrostatics in a dielectric cylinder",
-    "type": "Rapport de physique numérique",
+    "type": "Numerical physics report",
     "institution": "EPFL",
     "date": "2025-11-21",
-    "dateLabel": "21 novembre 2025",
+    "dateLabel": "21 November 2025",
     "authors": [
       "Jeremy Kull Jaeggli",
       "Ludovic Joseph A. Brenier"
     ],
-    "summary": "Résolution du potentiel et du champ électriques dans un cylindre contenant des charges libres, avec une permittivité et une densité de charge variables.",
-    "scope": "Validation sur une solution analytique et analyse des charges de polarisation aux interfaces.",
+    "summary": "Solving for the electric potential and field in a cylinder containing free charges, with variable permittivity and charge density.",
+    "scope": "Validation against an analytical solution and analysis of polarisation charges at interfaces.",
     "methods": [
-      "Éléments finis",
-      "Formulation variationnelle",
+      "Finite elements",
+      "Variational formulation",
       "Polarisation"
     ],
     "pdf": "/papers/electrostatique-cylindre-dielectrique-2025.pdf",
     "pages": 14,
-    "fileSize": "2,2 Mo",
-    "language": "Français",
-    "locale": "fr",
+    "fileSize": "2.2 MB",
+    "language": "French",
+    "pdfLocale": "fr",
     "collection": "numerical",
     "cover": {
       "src": "/images/electrostatique-cylindre-dielectrique-cover.webp",
@@ -178,26 +178,26 @@ export const papers: Paper[] = [
   {
     "slug": "propagation-ondes-ocean-profondeur-variable",
     "title": "Wave propagation in an ocean of variable depth: analysis and numerical simulation",
-    "type": "Rapport de physique numérique",
+    "type": "Numerical physics report",
     "institution": "EPFL",
     "date": "2025-11-21",
-    "dateLabel": "21 novembre 2025",
+    "dateLabel": "21 November 2025",
     "authors": [
       "Jeremy Kull Jaeggli",
       "Ludovic Joseph A. Brenier"
     ],
-    "summary": "Comparaison de trois équations d’onde pour étudier la propagation, la réflexion et l’amplification d’une vague à l’approche d’une côte.",
-    "scope": "Analyse des modes propres, de la stabilité numérique et de l’influence du profil bathymétrique.",
+    "summary": "Comparison of three wave equations to study wave propagation, reflection and amplification as a wave approaches the coast.",
+    "scope": "Analysis of normal modes, numerical stability and the influence of the seabed profile.",
     "methods": [
-      "Approximation WKB",
-      "Différences finies",
-      "Bathymétrie variable"
+      "WKB approximation",
+      "Finite differences",
+      "Variable bathymetry"
     ],
     "pdf": "/papers/propagation-ondes-ocean-profondeur-variable-2025.pdf",
     "pages": 20,
-    "fileSize": "1,9 Mo",
-    "language": "Français",
-    "locale": "fr",
+    "fileSize": "1.9 MB",
+    "language": "French",
+    "pdfLocale": "fr",
     "collection": "numerical",
     "cover": {
       "src": "/images/propagation-ondes-ocean-profondeur-variable-cover.webp",
@@ -208,26 +208,26 @@ export const papers: Paper[] = [
   {
     "slug": "dynamique-quantique-effet-tunnel",
     "title": "Quantum dynamics and tunnelling: numerical solution of the Schrödinger equation",
-    "type": "Rapport de physique numérique",
+    "type": "Numerical physics report",
     "institution": "EPFL",
     "date": "2025-11-21",
-    "dateLabel": "21 novembre 2025",
+    "dateLabel": "21 November 2025",
     "authors": [
       "Jeremy Kull Jaeggli",
       "Ludovic Joseph A. Brenier"
     ],
-    "summary": "Simulation de l’évolution d’un paquet d’onde dans un potentiel harmonique et en présence d’une barrière, à l’aide du schéma de Crank–Nicolson.",
-    "scope": "Étude de la transmission, des interférences et de la convergence, avec comparaison aux comportements classiques.",
+    "summary": "Simulation of wave-packet evolution in a harmonic potential and in the presence of a barrier using the Crank–Nicolson scheme.",
+    "scope": "Investigation of transmission, interference and convergence, with comparisons to classical behaviour.",
     "methods": [
       "Crank–Nicolson",
-      "Paquets d’onde",
-      "Effet tunnel"
+      "Wave packets",
+      "Quantum tunnelling"
     ],
     "pdf": "/papers/dynamique-quantique-effet-tunnel-2025.pdf",
     "pages": 13,
-    "fileSize": "1,2 Mo",
-    "language": "Français",
-    "locale": "fr",
+    "fileSize": "1.2 MB",
+    "language": "French",
+    "pdfLocale": "fr",
     "collection": "numerical",
     "cover": {
       "src": "/images/dynamique-quantique-effet-tunnel-cover.webp",
